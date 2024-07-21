@@ -9,6 +9,13 @@ import java.util.NoSuchElementException;
 
 /*
     JDBC - DriverManager 사용
+    <커넥션을 얻어서 쿼리를 날리는 Repository>
+    !!과정 요약!!
+    1. getConnection 요청을 통해 커넥션을 얻는다.
+    2. 커넥션을 닫을 객체를 null로 초기화 하는 이유는, SQLException은 Checked Exception 이기 떄문에, try-catch로 처리
+    3. PreparedStatement 객체를 이용해 쿼리를 DB에 날린다.
+    4. 모든 처리가 완료 되었을땐, 연결된 커넥션을 순차적으로 끊어줘야한다.
+    5. ResultSet은 DB에서 불러온 결과를 저장해서 값을 조회하는 역할을 한다. (데이터 저장소)
  */
 @Slf4j
 public class MemberRepositoryV0 {

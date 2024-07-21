@@ -34,5 +34,4 @@ class MemberRepositoryV0Test {
         assertThatThrownBy(() -> repository.findById(member.getMemberId()))
                 .isInstanceOf(NoSuchElementException.class);
     }
-
 }

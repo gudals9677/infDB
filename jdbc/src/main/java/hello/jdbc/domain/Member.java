@@ -1,7 +1,9 @@
 package hello.jdbc.domain;
 
 import lombok.Data;
-
+/*
+*  예제를 위한 Member class
+**/
 @Data
 public class Member {
 

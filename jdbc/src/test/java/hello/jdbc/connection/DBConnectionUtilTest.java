@@ -7,7 +7,9 @@ import org.junit.jupiter.api.Test;
 import java.sql.Connection;
 
 import static org.assertj.core.api.Assertions.*;
-
+/*
+*   데이터베이스 커넥션 테스트
+* */
 @Slf4j
 public class DBConnectionUtilTest {
 
